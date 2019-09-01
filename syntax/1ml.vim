@@ -40,7 +40,7 @@ syntax match mlArrow /\(->\|\~>\|=>\)/
 syntax match mlComment /--.*/
 syntax match mlDecimal /\<\d\+\>/
 syntax match mlPunct /\(:>\|:\|=\(>\)\@!\)/
-syntax match mlLetOp /\<let[+*&]\?/
+syntax match mlLetOp /\<let\([+*&]\|\>\)/
 syntax match mlRawId /\<r#\h*/
 
 syntax region mlString start=+"+ skip=+\\"+ end=+"+
